@@ -1,7 +1,7 @@
 function factorial(number) {
-    //records each forward phase
-    //forward phase: everytime the funtion is calling itself
-  console.log("Forward phase", number); 
+  //records each forward phase
+  //forward phase: everytime the function is calling itself
+  console.log("Forward phase", number);
   // Base case
   if (number <= 1) {
     console.log("base case", number);
@@ -10,8 +10,8 @@ function factorial(number) {
   // Recursive case
   const numberMinusOneFactorial = factorial(number - 1);
 
-//   records each  backward phase
-// backward phase starts when a fucntion call satisfies the base case
+  //   records each  backward phase
+  // backward phase starts when a function call satisfies the base case
   console.log("Backward phase", number, "*", numberMinusOneFactorial);
 
   return number * numberMinusOneFactorial;
